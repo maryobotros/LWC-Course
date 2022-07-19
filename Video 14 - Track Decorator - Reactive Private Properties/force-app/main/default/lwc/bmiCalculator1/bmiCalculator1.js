@@ -22,4 +22,13 @@ export default class BmiCalculator extends LightningElement {
             this.bmi = undefined;
         }
     }
+
+    get bmiValue(){
+        if(this.bmi === undefined){
+            return "";
+        }
+        else{
+            return "Your BMI is: " + this.bmi;
+        }
+    }
 }
