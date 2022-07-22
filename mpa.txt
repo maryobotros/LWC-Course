@@ -1,0 +1,30 @@
+<template>
+    <lightning-map 
+        map-markers={mapMarkers}
+        zoom-level={zoomLevel}
+        list-view={listView}  
+    > 
+    </lightning-map>
+</template>
+
+
+
+import { LightningElement } from 'lwc';
+
+export default class Map1 extends LightningElement {
+    mapMarkers = [
+        {
+            location: {
+                Street: "6301 Owensmouth Avenue",
+                City: "Woodland Hills",
+                State: "CA",
+            },
+            title: "Farmer's Insurance",
+            description:
+                "The corporate headquarters for Farmer's Insurance Group.",
+            icon: "standard:location",
+        },
+    ];
+    zoomLevel = 15;
+    listView = "visible";
+}
