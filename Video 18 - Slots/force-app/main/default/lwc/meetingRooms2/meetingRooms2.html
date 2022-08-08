@@ -1,5 +1,5 @@
 <template>
-    <lightning-card title="Meeting Rooms">
+    <lightning-card title="Meeting Rooms 2">
         <ul>
             <template for:each={meetingRoomsInfo} for:item="room">
                 <li key={room.roomName} style="padding: 10px">
@@ -9,6 +9,7 @@
                                 {room.roomCapacity}
                             </p>
                         </lightning-tile>
+                        <div>Additional markup will go in unnamed slot</div>
                     </c-meeting-room>
                 </li>
             </template>
