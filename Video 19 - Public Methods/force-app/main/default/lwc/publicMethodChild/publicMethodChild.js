@@ -10,7 +10,8 @@ export default class PublicMethodChild extends LightningElement {
         { label: "Black Marker", value: "black"},
     ];
 
-    @api selectCheckbox(checkboxValue){
+    @api
+    selectCheckbox(checkboxValue){
         let selectedCheckbox;
         
         for(let i = 0; i < this.options.length; i ++){
@@ -19,13 +20,14 @@ export default class PublicMethodChild extends LightningElement {
             }
         }
 
-        if(selectedCheckbox){
+        if(selectedCheckbox != null){
             this.value = selectedCheckbox;
             return "Successfully checked";
         }
         else{
-            return "No checkbox found"
+            return "No checkbox found";
         }
     }
 
+    
 }
