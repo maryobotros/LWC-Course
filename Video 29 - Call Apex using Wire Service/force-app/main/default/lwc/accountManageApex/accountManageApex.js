@@ -8,9 +8,8 @@ export default class AccountManageApex extends LightningElement {
 
     get responseReceived(){
         if(this.accounts){
-            return true;
-        }
+            return true
+        }   
         return false;
     }
-
 }
